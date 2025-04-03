@@ -15,24 +15,21 @@ const insertY = ["the soup kitchen", "Disneyland", "the White House"];
 const insertZ = ["spontaneously combusted",
   "melted into a puddle on the sidewalk",
   "turned into a slug and crawled away"];
-
-3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
-
+  
+// Event listener for button click
 randomize.addEventListener('click', result);
 
 function result() {
+  let newStory = storyText;
 
-  if(customName.value !== '') {
-    const name = customName.value;
+  // Get random items from arrays
+  const xItem = randomValueFromArray(insertX);
+  const yItem = randomValueFromArray(insertY);
+  const zItem = randomValueFromArray(insertZ);
 
-  }
+  // Replace placeholders with random values
+  newStory = newStory
+    .replaceAll(':insertx:', xItem)
+    .replace(':inserty:', yItem)
+    .replace(':insertz:', zItem);
 
-  if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
-  }
-
-  story.textContent = ;
-  story.style.visibility = 'visible';
-}
