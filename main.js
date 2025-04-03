@@ -15,7 +15,7 @@ const insertY = ["the soup kitchen", "Disneyland", "the White House"];
 const insertZ = ["spontaneously combusted",
   "melted into a puddle on the sidewalk",
   "turned into a slug and crawled away"];
-  
+
 // Event listener for button click
 randomize.addEventListener('click', result);
 
@@ -32,4 +32,11 @@ function result() {
     .replaceAll(':insertx:', xItem)
     .replace(':inserty:', yItem)
     .replace(':insertz:', zItem);
+
+// If a custom name is entered, replace "Bob" with it (capitalize first letter)
+if (customName.value.trim() !== '') {
+    const name = customName.value.trim();
+    const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
+    newStory = newStory.replace('Bob', capitalizedName);
+  }
 
