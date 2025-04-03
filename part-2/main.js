@@ -13,6 +13,16 @@ const altTexts = ['Closeup of a human eye','Wavy white and blue fabric',
     'Butterfly on a green leaf'];
 
 /* Looping through images */
+imageFiles.forEach((src, index) => {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', src);
+    newImage.setAttribute('alt', altTexts[index]);
+    thumbBar.appendChild(newImage);
+    newImage.addEventListener('click', () => {
+        displayedImage.src = src;
+        displayedImage.alt = altTexts[index];
+    });
+});
 
 const newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
