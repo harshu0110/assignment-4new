@@ -1,16 +1,13 @@
 html, body {
   margin: 0;
 }
-
-html {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  height: 100%;
-}
-
-body {
-  overflow: hidden;
-  height: inherit;
-}
+body
+{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;}
+canvas {
+  display: block;}
 
 h1 {
   font-size: 2rem;
