@@ -5,18 +5,24 @@ body
 {
   background-color: black;
   color: white;
-  font-family: sans-serif;}
-canvas {
-  display: block;}
-
-h1 {
-  font-size: 2rem;
-  letter-spacing: -1px;
-  position: absolute;
-  margin: 0;
-  top: -4px;
-  right: 5px;
-
-  color: transparent;
-  text-shadow: 0 0 4px white;
+  font-family: sans-serif;
 }
+
+canvas {
+  display: block;
+}
+
+  h1 
+  {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  
+  p {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 1.2rem;
+  }
+  
